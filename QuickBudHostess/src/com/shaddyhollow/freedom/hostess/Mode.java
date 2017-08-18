@@ -1,0 +1,13 @@
+package com.shaddyhollow.freedom.hostess;
+
+public enum Mode {
+	INFO,
+	PATRON_SINGLE,
+	PATRON_SEATING,
+	PATRON_MOVE,
+	TABLE_SINGLE,
+	SECTION_LIST,
+	SECTION_DETAIL,
+	COMBINE_TABLES,
+	CARRYOUT_SINGLE
+}

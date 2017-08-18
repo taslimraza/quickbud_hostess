@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="navy_brown">#7F3300</color>
+    <color name="background_overlay_dark">#CCFFFFFF</color>
+  
+    <color name="background">#FFDDDDDD</color>
+    <color name="green">#808dc73f</color>
+
+</resources>

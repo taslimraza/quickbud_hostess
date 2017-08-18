@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_tabledetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
+        >
+        <TextView
+            android:id="@+id/label_table_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Table #:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/table_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_table_name"
+	        android:layout_toRightOf="@id/label_table_name"
+	        android:text="17"
+	        />
+        
+        <TextView
+            android:id="@+id/label_server_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_table_name"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Server:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/server_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_server_name"
+	        android:layout_toRightOf="@id/label_server_name"
+	        android:text="3"
+	        />
+	    
+	    <TextView
+            android:id="@+id/label_patron_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_server_name"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Diner:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_name"
+	        android:layout_toRightOf="@id/label_patron_name"
+	        android:text="Guest"
+	        />
+
+        <TextView
+            android:id="@+id/label_patron_party"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_name"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="# in Party:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_party"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_party"
+	        android:layout_toRightOf="@id/label_patron_party"
+	        android:text="3"
+	        />
+	    
+        <TextView
+            android:id="@+id/label_patron_timeseated"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_party"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Time Seated:"             
+	        android:textStyle="bold" 
+            />
+	    <TextView
+	        android:id="@+id/patron_timeseated"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@id/label_patron_timeseated"
+	        android:layout_toRightOf="@id/label_patron_timeseated"
+	        android:text="10:10AM"
+	        />
+
+        <TextView
+            android:id="@+id/label_patron_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/label_patron_timeseated"
+	        android:layout_alignParentLeft="true"
+	        android:paddingLeft="3dp"
+	        android:paddingRight="3dp"
+			android:text="Comments: "             
+	        android:textStyle="bold" 
+            />
+   	    <TextView
+	        android:id="@+id/patron_comments"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/patron_timeseated"
+	        android:layout_toRightOf="@id/label_patron_comments"
+	        android:text=""
+	        android:gravity="top"
+	        android:singleLine="false"
+	        />
+
+   	</RelativeLayout>
+	
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:orientation="vertical"
+		>
+
+        <Button
+            android:id="@+id/btn_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_yellow"
+	        style="@style/ButtonText"
+            android:text="Comment" />
+        
+   	    <Button
+	        android:id="@+id/btn_seat"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_green"
+	        style="@style/ButtonText"
+	        android:text="Seat" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_red"
+	        style="@style/ButtonText"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/btn_reseat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_red"
+	        style="@style/ButtonText"
+            android:text="Reseat" />
+
+        <Button
+            android:id="@+id/btn_hold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_yellow"
+	        style="@style/ButtonText"
+            android:text="Hold" />
+        
+        <Button
+            android:id="@+id/btn_reassign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_beige"
+	        style="@style/ButtonText"
+            android:text="Reassign" />
+
+        <Button
+            android:id="@+id/btn_combine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_beige"
+	        style="@style/ButtonText"
+            android:text="Combine" />
+
+        <Button
+            android:id="@+id/btn_move"
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_beige"
+	        style="@style/ButtonText"
+            android:text="Move" />
+        
+        <Button
+            android:id="@+id/btn_resize"
+	        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_beige"
+	        style="@style/ButtonText"
+            android:text="Resize" />
+
+	    <Button
+	        android:id="@+id/btn_print"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+	        style="@style/ButtonText"
+	        android:text="Reprint Order" />
+	
+   	    <Button
+	        android:id="@+id/btn_open"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_green"
+	        style="@style/ButtonText"
+	        android:text="Open" />
+
+	    <Button
+	        android:id="@+id/btn_close"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_red"
+	        style="@style/ButtonText"
+	        android:text="Close" />
+
+	    <Button
+	        android:id="@+id/btn_finishcombine"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_green"
+	        style="@style/ButtonText"
+	        android:text="Finish" />
+	    
+	    <Button
+	        android:id="@+id/btn_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_yellow"
+	        style="@style/ButtonText"
+	        android:text="Cancel" />
+	    
+	    </LinearLayout>
+
+
+</RelativeLayout>

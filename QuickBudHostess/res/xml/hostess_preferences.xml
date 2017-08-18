@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory 
+	    android:title="@string/carryout_printer" >
+	    <com.shaddyhollow.freedom.dinendashhostess.printer.PrinterListPreference
+	        android:key="carryout_printer"
+	        android:title="@string/carryout_printer"
+	        android:summary="@string/carryout_printer_summ"
+	        android:defaultValue="BT:" />
+	    <Preference
+	        android:key="carryout_printer_test"
+	        android:title="@string/test_printer"
+	        android:summary="@string/test_printer_summ"
+	        />
+   	</PreferenceCategory>    
+    
+<!--     <PreferenceCategory 
+	    android:title="@string/dinein_printer" >
+	    <com.shaddyhollow.freedom.dinendashhostess.printer.PrinterListPreference
+	        android:key="dinein_printer"
+	        android:title="@string/dinein_printer"
+	        android:summary="@string/dinein_printer_summ"
+	        android:defaultValue="BT:" />
+	    <Preference
+	        android:key="dinein_printer_test"
+	        android:title="@string/test_printer"
+	        android:summary="@string/test_printer_summ"
+	        />
+	</PreferenceCategory> -->
+	
+    <PreferenceCategory 
+	    android:title="@string/layouts_section" >
+	    <Preference
+	        android:key="layout_backup"
+	        android:title="@string/action_backup"
+	        android:summary="@string/action_backup_summ"
+	        />
+	    <Preference
+	        android:key="layout_restore"
+	        android:title="@string/action_restore"
+	        android:summary="@string/action_restore_summ"
+	        />
+	    <Preference
+	        android:key="layout_clear"
+	        android:title="@string/action_clear"
+	        android:summary="@string/action_clear_summ"
+	        />
+    </PreferenceCategory>
+    <!-- <PreferenceCategory 
+	    android:title="@string/application_section" >
+	    <Preference
+	        android:key="application_checkupdate"
+	        android:title="@string/action_update"
+	        android:summary="@string/action_update_summ"
+	        />
+	</PreferenceCategory>  -->       
+
+</PreferenceScreen>

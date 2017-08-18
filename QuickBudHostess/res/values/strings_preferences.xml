@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="carryout_printer">Carry Out Printer</string>
+    <string name="carryout_printer_summ">Identifies the printer to be used for Carry Out Orders</string>
+    <string name="dinein_printer">Dine In Printer</string>
+    <string name="dinein_printer_summ">Identifies the printer to be used for Dine In Orders</string>
+    
+    <string name="test_printer">Test Printer</string>
+    <string name="test_printer_summ">Test the printer to make sure it is operational</string>
+    
+    <string name="remoteserver">Remote Server Address</string>
+    <string name="remoteserver_summ">The address of the remote server to use for authentication</string>
+    
+    <string name="layouts_section">Layouts</string>
+
+    <string name="action_clear">Delete Plans</string>
+    <string name="action_clear_summ">Delete all plans on this device</string>
+
+    <string name="action_backup">Backup Plans</string>
+    <string name="action_backup_summ">Backup plans from this device to the server</string>
+
+    <string name="action_restore">Restore Plans</string>
+    <string name="action_restore_summ">Restore plans from the server to this devices</string>
+    
+    <string name="application_section">Application</string>
+    <string name="action_update">Check for Update</string>
+    <string name="action_update_summ">Check the server to see if there is a newer version of QuickTable</string>
+    
+</resources>

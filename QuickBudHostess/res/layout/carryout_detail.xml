@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_patrondetail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:id="@+id/patron_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Guest"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/patron_address_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patron_name"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/patron_address_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/patron_address_line"
+            android:textSize="16dp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/patron_address_city" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <TextView
+                    android:id="@+id/order_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Order:"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <com.shaddyhollow.util.ExpandableListView
+                    android:id="@+id/order_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/order_text"
+                    android:divider="@null" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" 
+                    android:layout_below="@id/order_list"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:id="@+id/item_total"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text="Total" />
+
+                    <TextView
+                        android:id="@+id/item_total_price"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:gravity="right" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnpatron_page"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+            android:text="Page" />
+
+        <Button
+            android:id="@+id/btnpatron_text"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+            android:text="Text" />
+
+        <!--
+             <Button
+            android:id="@+id/btnpatron_print"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_blue"
+	        style="@style/ButtonText"
+            android:text="Reprint Order" />
+        -->
+
+        <Button
+            android:id="@+id/btnpatron_remove"
+            style="@style/ButtonText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/btn_red"
+            android:padding="4dp"
+            android:text="Remove" />
+    </LinearLayout>
+
+</RelativeLayout>

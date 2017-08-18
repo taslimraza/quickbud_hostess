@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+	android:layout_marginLeft="6dp"
+	android:layout_marginRight="6dp"
+	android:layout_marginTop="4dp"
+	android:layout_marginBottom="4dp"
+	android:background="@drawable/bg_card_normal"
+    android:padding="5dip" >
+ 
+    <!--  ListRow Left sied Thumbnail image -->
+    <LinearLayout android:id="@+id/thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dip"
+        android:background="@android:color/transparent"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip">
+ 
+        <TextView
+            android:id="@+id/list_image"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:gravity="left"
+            />
+ 
+    </LinearLayout>
+ 
+    <TextView
+        android:id="@+id/section_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:textColor="#040404"
+        android:typeface="sans"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+ 
+    <TextView
+        android:id="@+id/tablecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/section_title"
+        android:layout_alignLeft="@id/section_title"
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="12sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/seatcount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tablecount"
+        android:layout_alignLeft="@id/section_title"
+        android:gravity="right"
+        android:layout_marginRight="5dip"
+        android:textSize="12sp"
+        android:textColor="#10bcc9"
+        android:textStyle="bold"/>
+    
+</RelativeLayout>
+</FrameLayout>

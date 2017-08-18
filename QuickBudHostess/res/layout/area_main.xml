@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/areas_frame"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:baselineAligned="false" 
+	android:background="#FFAAAAAA"
+	>
+		<fragment android:name="com.shaddyhollow.freedom.sectionplans.AreaListFragment"
+		    android:id="@+id/area_list"
+			android:layout_width="0dp" 
+			android:layout_height="fill_parent"
+			android:background="#FFAAAAAA"
+			android:layout_margin="5dp"
+			android:layout_weight="8"
+			>
+		</fragment>
+</LinearLayout>

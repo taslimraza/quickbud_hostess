@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/place_tables_grid_frame"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent"
+	android:orientation="horizontal"
+	android:baselineAligned="false" 
+	android:background="@color/background"
+	>
+		<com.shaddyhollow.areagrid.AreaGrid 
+		    android:id="@+id/grid"
+			android:layout_width="0dp" 
+			android:layout_height="fill_parent"
+			android:layout_margin="5dp"
+			android:layout_weight="8"
+			>
+		</com.shaddyhollow.areagrid.AreaGrid>
+</LinearLayout>

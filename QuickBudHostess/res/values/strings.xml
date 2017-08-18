@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuickBud</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="place_tables_please_place_tables">Please place your tables:</string>
+    <string name="place_tables_remaining_tables_formatted">Single tile tables: %1$d</string>
+    <string name="place_tables_label">Place your tables!</string>
+    <string name="place_tables_undo">Undo</string>
+    <string name="title_activity_area_info_editor">AreaInfoEditor</string>
+    <string name="title_activity_area_grid_fragment">AreaGridFragment</string>
+
+    <string name="action_floorplans">Floor plans</string>
+    <string name="action_sectionplans">Section plans</string>
+    <string name="title_floorplan">Floor Plan Editor</string>
+    <string name="title_areas">Section Plan Editor</string>
+    <string name="title_servers">Server Editor</string>
+    <string name="title_hostess">QuickBud</string>
+    
+    <string name="action_OK">OK</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_add">Add</string>
+    
+    <string name="action_addsection">Add Section</string>
+    <string name="action_clearlayout">Clear Layout</string>
+    <string name="action_removesections">Remove Sections</string>
+    <string name="action_sectionplan">Change Plan</string>
+    <string name="action_servers">Manage Servers</string>
+    <string name="action_dailyreset">Daily Reset</string>
+    <string name="action_statesave">Save State</string>
+    <string name="action_staterestore">Restore State</string>
+    <string name="action_logout">Logout</string>
+    
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_resettables">Reset Tables</string>
+    
+    <string name="color_picker_default_title">Select a Color</string>
+    <string name="color_swatch_description">Color %1$d</string>
+    <string name="color_swatch_description_selected">Color %1$d selected</string>
+
+    <string name="queued_patrons_title">Queued Patrons</string>
+    <string name="carryout_title">Pick Up &amp; Delivery</string>
+    
+    <string-array name="tabletype_arrays">
+        <item>Table</item>
+        <item>Booth</item>
+        <item>Square</item>
+        <item>Diamond</item>
+        <item>Circle</item>
+        <item>Rectangle</item>
+        <item>Stool</item>
+    </string-array>
+   
+</resources>

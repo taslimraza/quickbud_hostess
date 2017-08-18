@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" 
+	    android:orientation="horizontal" >
+	
+    <TextView
+        android:id="@+id/name"
+        style="@style/DndText"
+        android:layout_width="160dp"
+        android:paddingLeft="5dp"
+        android:text="@string/name" />
+
+	<TextView 
+	    android:id="@+id/special_needs"
+	    android:layout_width="130dp"
+	    android:layout_height="wrap_content"
+        style="@style/DndText"
+        android:text="line 1, line 2"
+        android:textSize="15sp"
+	    android:singleLine="false" />    
+	    
+	<TextView
+        android:id="@+id/time_in"
+        style="@style/DndText"
+        android:layout_width="100dp"
+        android:text="@string/time_in" />
+    	    	
+    <TextView
+        android:id="@+id/party_size"
+        style="@style/DndText"
+        android:text="@string/party_size"
+        android:layout_width="60dp" />
+
+    <TextView
+        android:id="@+id/wait_time"
+        style="@style/DndText"
+        android:text="25 to 30 min"
+        android:layout_width="130dp" />
+        
+    <TextView
+        android:id="@+id/status"
+        style="@style/DndText"
+		android:layout_width="100dp"
+        android:text="@string/status"
+         />
+
+    <ImageView
+        android:id="@+id/order_in"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/order_in" />
+
+</LinearLayout>

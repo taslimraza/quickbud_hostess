@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="empty_queue">There are no patrons waiting.</string>
+	<string name="empty_carryouts">There are no orders waiting.</string>
+	<string name="name">Name</string>
+	<string name="party_size">Party</string>
+	<string name="order_status">Order</string>
+	<string name="patron_status">Customer Location</string>
+	<string name="status">ARRIVED</string>
+	<string name="phone">Phone#</string>
+	<string name="remove">Remove</string>
+	<string name="page">Page</string>
+	<string name="add_walkin">Add Walk-In Patron</string>
+	<string name="wait_time">Current Wait</string>
+	<string name="order_in">Order In</string>
+	<string name="time_in">Time In</string>
+	<string name="special_needs">Special Needs</string>
+	<string name="enable_autoprint">Auto Print Carryout Orders</string>
+</resources>
